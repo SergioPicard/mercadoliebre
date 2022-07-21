@@ -13,7 +13,7 @@ body{
     background-color: #ffe600;
 }
 
-// PRODUCTOS
+/* PRODUCTOS*/
 
 .section{
     width: 90%;
@@ -28,4 +28,15 @@ body{
 .prod-text{
     margin-top: 0.1px;
     background-color: #fff;
+}
+
+/*FOOTER*/
+
+.footer-ul{
+    margin-top: 30px;
+}
+
+.footer-li{
+    list-style: none;
+    text-align: center;
 }
