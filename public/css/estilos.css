@@ -1,42 +1,153 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body{
-    background-color: #EBEBEB;
+/* Amarillo: #EAC926;
+Azul: #03264C;
+Celeste: #1259c3;
+Gris oscuro: #666;
+Gris claro: #ebebeb;
+Verde: #39b54a; */
+
+body {
+  font-family: 'Roboto', sans-serif;
 }
 
-.header{
-    width: 100%;
-    background-color: #ffe600;
+a {
+  text-decoration: none;
 }
 
-/* PRODUCTOS*/
+li {
+  list-style: none;
+}
+
+/* CONFIGURO EL HEADER */
+
+.header {
+  background-color: #EAC926;
+}
+
+.logo {
+  width: 50%;
+  margin: 30px;
+}
+
+.search-bar{
+  margin-left: 10px;
+}
+
+.header-title{
+  text-align: center;
+  font-size: 15px;
+  margin-top: 20px;
+}
+
+.header-ul{
+  margin-top: 15px;
+}
+
+.header-ul a{
+  color: #000;
+}
+
+.menu-hambur{
+  color: #fff;
+  text-align: center;
+  padding: 40px;
+}
+
+.menu-hambur i{
+  font-size: 25px;
+  background-color: #1259c3;
+  padding: 10px;
+  border-radius: 10%;
+}
+
+/* ESTILOS AL MAIN  */
+
+main {
+  background-color: #ebebeb;
+}
 
 .section{
-    width: 90%;
+  width: 90%;
+  margin: auto;
 }
 
-.product {
-    width: 90%;
-    margin: auto;
-    margin-top: 20px;
+.product{
+  display: flex;
+  flex-direction: column;
+}
+
+.prod-img{
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.prod-img i{
+  color: #39b54a;
+  border: 1px solid #39b54a;
+  margin-right: 20px;
+  padding: 4px;
+  border-radius: 50%;
+  margin-top: 10px;
+}
+
+
+.prod-title{
+  font-size: 24px;
+  margin: 15px;
+  text-align: center;
+  color: #666;
+
 }
 
 .prod-text{
-    margin-top: 0.1px;
-    background-color: #fff;
+  display: flex;
+  height: 70px;
+  background-color: #fff;
+  margin-bottom: 15px;
+  margin-top: 1px;
+  padding-top: 15px;
+  justify-content: space-around;
 }
 
-/*FOOTER*/
-
-.footer-ul{
-    margin-top: 30px;
+.prod-precio{
+  font-size: 18px;
 }
+
+.prod-desc{
+  font-size: 16px;
+  color: #39b54a;
+}
+
+.prod-descript{
+  font-size: 16px;
+}
+
+
+/* FOOTER  */
 
 .footer-li{
-    list-style: none;
-    text-align: center;
+  text-align: center;
+  margin: 80px;
+}
+
+.footer-li i{
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #1259c3;
+}
+
+.footer-content{
+  color: #666;
+  font-size: 15px;
+}
+
+.footer-content p{
+  font-size: 12px;
 }
