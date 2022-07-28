@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 /* Amarillo: #EAC926;
 Azul: #03264C;
 Celeste: #1259c3;
@@ -13,6 +17,8 @@ Verde: #39b54a; */
 
 body {
   font-family: 'Roboto', sans-serif;
+  background-color: #ebebeb;
+
 }
 
 a {
@@ -23,6 +29,11 @@ li {
   list-style: none;
 }
 
+main {
+  /* background-color: #ebebeb; */
+
+}
+
 /* CONFIGURO EL HEADER */
 
 .header {
@@ -30,7 +41,7 @@ li {
 }
 
 .logo {
-  width: 50%;
+  width: 33%;
   margin: 30px;
 }
 
@@ -46,6 +57,8 @@ li {
 
 .header-ul{
   margin-top: 15px;
+  margin-left: 5%;
+  display: none;
 }
 
 .header-ul a{
@@ -67,18 +80,17 @@ li {
 
 /* ESTILOS AL MAIN  */
 
-main {
-  background-color: #ebebeb;
-}
-
 .section{
   width: 90%;
   margin: auto;
+  
 }
 
 .product{
   display: flex;
   flex-direction: column;
+  margin-bottom: 10px;
+  background-color: #fff;
 }
 
 .prod-img{
@@ -87,16 +99,6 @@ main {
   flex-direction: column;
   align-items: flex-end;
 }
-
-.prod-img i{
-  color: #39b54a;
-  border: 1px solid #39b54a;
-  margin-right: 20px;
-  padding: 4px;
-  border-radius: 50%;
-  margin-top: 10px;
-}
-
 
 .prod-title{
   font-size: 24px;
@@ -107,17 +109,37 @@ main {
 }
 
 .prod-text{
-  display: flex;
-  height: 70px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  height: 100%;
+  border-top: 1px solid #ebebeb;
   background-color: #fff;
   margin-bottom: 15px;
-  margin-top: 1px;
   padding-top: 15px;
-  justify-content: space-around;
+}
+
+.prod-i{
+  display: flex;
+  align-items: right;
+}
+
+.prod-i i{
+  color: #39b54a;
+  margin: auto;
+  padding: 5px;
+  border: 1px solid #39b54a;
+  border-radius: 50%;
+  margin-right: 30px;
+}
+
+.prod-text-des{
+  margin-left: 30px; 
 }
 
 .prod-precio{
   font-size: 18px;
+
 }
 
 .prod-desc{
@@ -129,12 +151,17 @@ main {
   font-size: 16px;
 }
 
-
 /* FOOTER  */
+
+.footer{
+  background-color: #fff;
+  padding-bottom: 35px;
+}
 
 .footer-li{
   text-align: center;
-  margin: 80px;
+  margin: 50px;
+  padding-top: 25px;
 }
 
 .footer-li i{
@@ -150,4 +177,29 @@ main {
 
 .footer-content p{
   font-size: 12px;
+}
+
+
+/* MEDIA QUERIS */
+
+@media (min-width: 481px){
+
+  .menu-hambur i{
+    display: none;
+  }
+
+  .header-ul{
+    display: flex;
+    flex-direction: column;
+  }
+  .product{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  }
+
+
+}
+
+
+@media (min-width: 769px){
+
 }
