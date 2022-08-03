@@ -29,24 +29,36 @@ li {
   list-style: none;
 }
 
-main {
-  /* background-color: #ebebeb; */
-
-}
-
 /* CONFIGURO EL HEADER */
 
 .header {
   background-color: #EAC926;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.header-items{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
 }
 
 .logo {
-  width: 33%;
-  margin: 30px;
+  width: 50%;
+  margin: auto;
 }
 
 .search-bar{
-  margin-left: 10px;
+  width: 50%;
+  text-align: center;
+}
+
+.search-bar form {
+  width: 100%;
 }
 
 .header-title{
@@ -55,13 +67,17 @@ main {
   margin-top: 20px;
 }
 
-.header-ul{
-  margin-top: 15px;
-  margin-left: 5%;
+.nav-bar{
   display: none;
+
 }
 
-.header-ul a{
+.header-ul{
+  display: flex;
+  align-content: center;
+}
+
+.ul-1 a, .ul-2 a{
   color: #000;
 }
 
@@ -69,6 +85,7 @@ main {
   color: #fff;
   text-align: center;
   padding: 40px;
+  margin: auto;
 }
 
 .menu-hambur i{
@@ -83,7 +100,6 @@ main {
 .section{
   width: 90%;
   margin: auto;
-  
 }
 
 .product{
@@ -110,7 +126,7 @@ main {
 
 .prod-text{
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr;
   grid-template-rows: 1fr;
   height: 100%;
   border-top: 1px solid #ebebeb;
@@ -121,34 +137,55 @@ main {
 
 .prod-i{
   display: flex;
-  align-items: right;
+justify-content: flex-end;  
+width: 25%;
+position: relative;
+left: 40%;
 }
 
 .prod-i i{
-  color: #39b54a;
-  margin: auto;
-  padding: 5px;
-  border: 1px solid #39b54a;
-  border-radius: 50%;
-  margin-right: 30px;
+  display: block;
+font-size: 16px;
+padding: 5px;
+width: 30px;
+height: 30px;
+border: 1px solid #39b54a;
+color: #39b54a;
+background-color: #FFF;
+border-radius: 50%;
+position: absolute;
+left: 150%;
+top: -15px;
 }
 
 .prod-text-des{
-  margin-left: 30px; 
+  display: flex;
+  flex-wrap: wrap;
+  width: 90%;
+  flex-shrink: 0;
+  margin: auto;
+
 }
+
 
 .prod-precio{
   font-size: 18px;
-
+  text-align: center;
 }
 
 .prod-desc{
   font-size: 16px;
+  width: 50%;
   color: #39b54a;
+  text-align: center;
 }
 
 .prod-descript{
   font-size: 16px;
+  margin-top: 20px;
+  text-align: left;
+  width: 50%;
+  color: #666;
 }
 
 /* FOOTER  */
@@ -184,22 +221,85 @@ main {
 
 @media (min-width: 481px){
 
-  .menu-hambur i{
+  .menu-hambur{
     display: none;
   }
 
-  .header-ul{
-    display: flex;
-    flex-direction: column;
+  .header-items {
+      width: 100%;
   }
+
+  .logo{
+    width: 33%;
+  }
+
+  .search-bar{
+    width: 33%;
+  }
+
+  .header-title{
+    width: 33%;
+  }
+
+  .nav-bar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+  }
+
+  .ul-1, .ul-2{
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+  }
+
+  .nav-bar div a{
+    font-size: 14px;
+  }
+
+.product{
+  width: 45%;
+}
+  .productos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+   align-items: stretch;
+   align-content: center;
+  }
+
+  .prod-i i{
+
+    left: 140%;
+}
+
+
   .product{
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
   }
 
-
 }
+
 
 
 @media (min-width: 769px){
 
+  .product{
+    width: 30%;
+  }
+  .prod-i i{
+
+    left: 150%;
+}
+
+.nav-bar div a{
+  font-size: 16px;
+}
 }
