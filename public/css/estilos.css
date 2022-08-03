@@ -44,7 +44,9 @@ li {
   justify-content: space-around;
   flex-wrap: wrap;
   align-items: center;
-  width: 100%;
+  width: 90%;
+  margin: auto;
+  height: 130px;
 }
 
 .logo {
@@ -55,16 +57,36 @@ li {
 .search-bar{
   width: 50%;
   text-align: center;
+  position: relative;
 }
 
 .search-bar form {
-  width: 100%;
+  width: 70%;
+}
+
+input[type=search] {
+  width: 90%;
+  border: 3px solid #fff;
+  border-radius: 5px;
+  padding: 8px 10px;
+  text-align: left;
+
+}
+
+.search-bar i{
+  position: absolute;
+  right: 12%;
+  top: 10px;
+  background-color: #FFF;
+  padding-left: 5px;
+  border-radius: 5px;
+  color: #666;
+  cursor: pointer;
 }
 
 .header-title{
   text-align: center;
   font-size: 15px;
-  margin-top: 20px;
 }
 
 .nav-bar{
@@ -258,6 +280,9 @@ top: -15px;
     align-self: auto;
     order: 0;
   }
+  .ul-1 a, .ul-2 a {
+    margin-left: 10px;
+  }
 
   .nav-bar div a{
     font-size: 14px;
@@ -302,4 +327,9 @@ top: -15px;
 .nav-bar div a{
   font-size: 16px;
 }
+
+.ul-1 a, .ul-2 a {
+  margin-left: 15px;
+}
+
 }
