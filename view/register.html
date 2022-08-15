@@ -27,8 +27,8 @@
     </div>
     <nav class="nav-bar">
         <div class="ul-1">
-            <a href="#ofertas">Ofertas</a>
-            <a href="home">Tiendas Oficiales</a>
+            <a href="home">Ofertas</a>
+            <a href="#">Tiendas Oficiales</a>
             <a href="#">Vender</a>
             <a href="#">Ayuda</a>
             </div>
@@ -118,5 +118,27 @@
             </ul>
         </div>
         </footer>
+        <script> 
+            // Agarramos el formulario por su id, y lo guardamos dentro de la variable formulario
+            const formulario = document.getElementById("formularioRegister");
+            // Agregamos un escucha de eventos al formulario, que ejecute una función cuando el evento sea ejecutado
+            formulario.addEventListener('submit', function(e){
+                e.preventDefault();
+                console.log(formulario.nombre.value)
+                if(formulario.usuario.value.length < 2){
+                    window.alert('No se ingresó un usuario válido!')
+                }
+                window.location.href="/"
+                if(formulario.contraseña.value.length < 2){
+                    window.alert('No se ingresó una contraseña válida!')
+                }
+                window.location.href="/"
+                if(formulario.contraseña.value != formulario.confirmarContraseña.value){
+                    window.alert('Las contraseñas no coinciden')
+                window.location.href="/"
+                }
+            });
+        
+        </script>
         </body>
         </html>

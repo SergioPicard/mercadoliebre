@@ -217,7 +217,6 @@ transition: all .4s ease-in-out;
   text-align: left;
   width: 50%;
   color: #232323;
-  transition: all .3s ease-in-out;
 
 }
 
@@ -497,7 +496,6 @@ transition: all .4s ease-in-out;
 
   .product:hover .prod-descript{
     visibility: visible;
-    transition: all .5s ease-in-out;
   }
   
 
