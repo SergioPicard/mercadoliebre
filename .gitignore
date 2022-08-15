@@ -1,0 +1,6 @@
+/node_modules
+.env
+
+
+
+heroku git:remote -a mercadoliebre-sergio
